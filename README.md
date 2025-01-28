@@ -3,8 +3,7 @@
 <!-- Background github cover with short introduction down below (I will change this BG picture after we finish the project) -->
 <img src="https://github.com/flexycode/CTINFMGL/blob/main/asset/Information-Management.png" />
 
-### Group Name: [Artificial Ledger Technology](https://github.com/Artificial-Ledger-Technology)  🇵🇭
-### Subject & Section: 🧚‍♂️ [CTINFMGL - COM231](https://www.youtube.com/watch?v=dQw4w9WgXcQ) 🧚‍♀️    
+### Subject & Section: [CTINFMGL - COM231](https://www.youtube.com/watch?v=dQw4w9WgXcQ)     
 ### Professor: 👩 [Jensen A. Santillan](https://www.youtube.com/watch?v=Zi_XLOBDo_Y)                    
 ### No. of Units: [3 Units](https://www.youtube.com/watch?v=d_Z-neEBuWM) 
 ### Prerequisite: [CCDATRCL - Data Structure and Algorithm](https://github.com/flexycode/CCDATRCL)     
@@ -228,7 +227,7 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 
 ## 💻 [10.1.1] - 2024-02-01
 ### Activity
-- ✨ Will designate a task from all the group members
+- ✨ Coming Soon
 - ✨ Coming Soon
 
 
