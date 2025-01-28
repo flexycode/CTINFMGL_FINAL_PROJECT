@@ -35,23 +35,33 @@ The Flight Booking App is a web application designed to simplify the process of 
 ## ✨ Key Features
 
 🚀 1. **User Authentication:** Users can create accounts, log in, and manage their profiles.
+
 🚀 2. **Flight Search:** Users can search for flights based on destination, departure time, and other criteria.
+
 🚀 3. **Booking Management:** Users can book flights, view their bookings, and cancel or modify them.
+
 🚀 4. **Payment Integration:** Secure payment gateway integration for processing payments.
+
 🚀 5. **Admin Panel:** Admins can manage flights, users, and payments.
+
 🚀 6. **Itinerary Management:** Users can view their travel itineraries, including flight details, hotel bookings, and transportation details.
 
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
 ## 💻 Techstacks
 
 * **Frontend:** React.js or Next.js (JavaScript)
-* **Backend:** Node.js with Express.js
-* **Database:** PostgreSQL (Recommended for its robustness and scalability)
+* **Backend:** Node.js with Express.js (Temporary
+* **Database:** PostgreSQL (Recommended for its robustness and scalability; It depends on the flow and overall decicion; let's focus on this!)
 * **Authentication:** JWT (JSON Web Tokens)
-* **Payment Gateway:** Stripe or PayPal
+* **Payment Gateway:** Stripe or PayPal ( Not required!)
 * **State Management:** Redux or Context API
 * **Styling:** CSS-in-JS (Styled-components) or Tailwind CSS
 * **Deployment:** Vercel (for Next.js) or Heroku
+
+## 🕵️ Resources
+```
+Coming Soon
+```
 
 <!-- Database Schema Revision, Also image for Data Model and Entity Relationship Diagram ERD. Link should be point out through assets folder for editing README.md -->
 ## 🧊 Database Schema
