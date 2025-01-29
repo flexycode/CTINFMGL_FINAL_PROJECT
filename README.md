@@ -169,9 +169,9 @@ If you would like to contribute to the Flight Booking App, please follow these s
 ### Special thanks to all my groupmates: 
  * ####  😎 [Jay Arre Talosig](https://github.com/flexycode) - Machine Learning Engineer | Blockchain Developer | Bioinformatics Scientist    
  * ####  🧭 [Custer Valencerina](https://github.com/) - Machine Learning Engineer | Full Stack Engineer | Front-End Developer
- * ####  💥 [Myckle Vince Natividad](https://github.com/) - Cybersecurity Forensic Engineer | Cloud Security Architect | Cyber Defense Forensic Analyst 
+ * ####  💥 [Myckle Vince Natividad](https://github.com/) - Cybersecurity Forensic Engineer | Cloud Security Architect | Cyber Defense Forensic Analyst | Cybersecurity Scrum Master
  * ####  🎲 [Angelo Castillo](https://github.com/) - Network Security Engineer | Digital Forensic Analyst | Security Forensic Analyst
- * ####  🤖 [Neo Flores](https://github.com/) - Cybersecurity Scrum Master | Network Engineer | DevOps Engineer
+ * ####  🤖 [Neo Flores](https://github.com/) - Machine Learning Engineer | Network Engineer | DevOps Engineer
  * ####  🌟 [Yeshua Venezuela](https://github.com/Yesh01) - Cyber Intelligence Specialist | Software Engineer | UI / UX Designer
 
 <!--  Reporting issues -->
