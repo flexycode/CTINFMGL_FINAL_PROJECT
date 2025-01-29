@@ -168,11 +168,11 @@ If you would like to contribute to the Flight Booking App, please follow these s
 ### 👋 Contributors
 ### Special thanks to all my groupmates: 
  * ####  😎 [Jay Arre Talosig](https://github.com/flexycode) - Machine Learning Engineer | Blockchain Developer | Bioinformatics Scientist    
- * ####  🧭 [Custer Valencerina](https://github.com/) - Machine Learning Engineer | Full Stack Engineer | Front-End Developer
- * ####  💥 [Myckle Vince Natividad](https://github.com/) - Cybersecurity Forensic Engineer | Cloud Security Architect | Cyber Defense Forensic Analyst | Cybersecurity Scrum Master
- * ####  🎲 [Angelo Castillo](https://github.com/) - Network Security Engineer | Digital Forensic Analyst | Security Forensic Analyst
- * ####  🤖 [Neo Flores](https://github.com/) - Machine Learning Engineer | Network Engineer | DevOps Engineer
- * ####  🌟 [Yeshua Venezuela](https://github.com/Yesh01) - Cyber Intelligence Specialist | Software Engineer | UI / UX Designer
+ * ####  🧭 [Custer Valencerina](https://github.com/Cegeurun) - Machine Learning Engineer | Full Stack Engineer | Front-End Developer
+ * ####  💥 [Myckle Vince Natividad](https://github.com/Kyelkyel) - Cybersecurity Forensic Engineer | Cloud Security Architect | Cyber Defense Forensic Analyst | Cybersecurity Scrum Master
+ * ####  🎲 [Angelo Castillo](https://github.com/gabcsx) - Network Security Engineer | Machine Learning Engineer | Security Forensic Analyst
+ * ####  🤖 [Neo Flores](https://github.com/moridin04) - Machine Learning Engineer | Network Engineer | DevOps Engineer
+ * ####  🌟 [Yeshua Venezuela](https://github.com/Yesh01) - Cyber Intelligence Specialist | Software Engineer | UI / UX Designer | Digital Forensic Analyst
 
 <!--  Reporting issues -->
 ### 🛸 Reporting Issues
