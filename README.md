@@ -127,12 +127,20 @@ CREATE TABLE CustomerInfo (
     ID_type VARCHAR(50)
 );
 ```
-<!-- Data Model Image -->
+<!-- Data Model Image link down below -->
 ## 🧊 Data Model
 ```
 Image Coming Soon
 ```
-<!-- Entity Relationship Diagram Image -->
+
+<!-- Entity Attribute Value Model Image link down below -->
+## 🧊 Entity Attribute Value Model
+```
+Image Coming Soon
+```
+
+
+<!-- Entity Relationship Diagram Image link down below -->
 ## 🧊 Entity Relationship Diagram
 ```
 Image Coming Soon
