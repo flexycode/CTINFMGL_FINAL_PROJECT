@@ -48,11 +48,11 @@ The Flight Booking App is a web application designed to simplify the process of 
 
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
 ## 💻 Techstacks
-
-* **Frontend:** React.js or Next.js (JavaScript)
-* **Backend:** Node.js with Express.js or NestJS (Node.js framework)
+#### PERN STACK 
+* **Frontend:** [React.js](https://react.dev/) or Next.js (JavaScript)
+* **Backend:** [Node.js](https://nodejs.org/en) with [Express.js](https://expressjs.com/) or [NestJS](https://nestjs.com/) (Node.js framework)
 * **Database:** PostgreSQL (Recommended for its robustness and scalability; It depends on the flow and overall decicion; let's focus on this!)
-* **Database:** [MongoDB](https://www.mongodb.com/) (database alternative choice)
+* **Database:** [MongoDB](https://www.mongodb.com/) (database alternative choice; tentative)
 * **Authentication:** JWT (JSON Web Tokens)
 * **Payment Gateway:** Stripe or PayPal ( Not required!)
 * **State Management:** Redux or Context API
