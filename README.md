@@ -68,6 +68,7 @@ Coming Soon
 ## 🧊 Database Schema
 #### SQL
 ```
+-- Users Table
 CREATE TABLE Users (
     UserID SERIAL PRIMARY KEY,
     CustomerID INT REFERENCES CustomerInfo(CustomerID),
@@ -77,6 +78,7 @@ CREATE TABLE Users (
     If_admin BOOLEAN DEFAULT FALSE
 );
 
+-- TravelBookings Table
 CREATE TABLE TravelBookings (
     BookingID SERIAL PRIMARY KEY,
     UserID INT REFERENCES Users(UserID),
@@ -87,6 +89,7 @@ CREATE TABLE TravelBookings (
     UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- PaymentDetails Table
 CREATE TABLE PaymentDetails (
     PaymentID SERIAL PRIMARY KEY,
     PaymentStatus VARCHAR(50) NOT NULL,
@@ -94,6 +97,7 @@ CREATE TABLE PaymentDetails (
     PaymentType VARCHAR(50) NOT NULL
 );
 
+-- FlightDetails Table
 CREATE TABLE FlightDetails (
     FlightID SERIAL PRIMARY KEY,
     ArrivalTime TIMESTAMP NOT NULL,
@@ -106,6 +110,7 @@ CREATE TABLE FlightDetails (
     TicketType VARCHAR(50)
 );
 
+-- Itinerary Table
 CREATE TABLE Itinerary (
     ItineraryID SERIAL PRIMARY KEY,
     VanPlateNumber VARCHAR(20),
@@ -116,6 +121,7 @@ CREATE TABLE Itinerary (
     HotelAddress VARCHAR(255)
 );
 
+-- CustomerInfo Table
 CREATE TABLE CustomerInfo (
     CustomerID SERIAL PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
@@ -125,8 +131,11 @@ CREATE TABLE CustomerInfo (
     Email VARCHAR(100) UNIQUE NOT NULL,
     ContactNo VARCHAR(20),
     ID_type VARCHAR(50)
+    PassportNumber VARCHAR(50), -- Added passport number
+    Nationality VARCHAR(50) -- Added nationality
 );
 ```
+
 <!-- Data Model Image link down below -->
 ## 🧊 Data Model
 ```
@@ -244,9 +253,14 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 - ✨ Coming Soon 💻 🚀
 - ✨ Coming Soon 🧠 🔑
 
-## 💻 [10.1.1] - 2024-01-29
+## 💻 [01.1.1] - 2024-01-29
 ### Activity
 - ✨ Brainstorming on what database should we use
+
+## 💻 [01.1.1] - 2024-01-31
+### Added
+- ✨ Custer Uploaded ERD Diagram
+- ✨  
   
 ## 💻 [10.1.1] - 2024-02-01
 ### Activity
