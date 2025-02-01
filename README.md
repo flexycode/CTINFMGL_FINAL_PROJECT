@@ -151,9 +151,9 @@ Image Coming Soon
 
 <!-- Entity Relationship Diagram Image link down below -->
 ## 🧊 Entity Relationship Diagram
-```
-Image Coming Soon
-```
+
+<!-- ERD Image -->
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Flight%20Booking%20ERD%20DRAFT%20V2.png" />
 
 <!-- 📜 Folder Structure down below -->
 # 📜 Folder Structure  
@@ -263,8 +263,8 @@ Chronological list of updates, bug fixes, new features, and other modifications 
     
 ## 💻 [10.1.1] - 2024-02-01
 ### Activity
-- ✨ Angelo, Myckle, Neo revise the EAV 
-- ✨ Uploaded the 
+- ✨ Angelo, Myckle, Neo revise the EAV model
+- ✨ Uploaded the EAV model
 
 🧊 Flight Booking
 
