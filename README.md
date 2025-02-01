@@ -260,12 +260,11 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 ## 💻 [01.1.1] - 2024-01-31
 ### Added
 - ✨ Custer Uploaded ERD Diagram
-- ✨  
-  
+    
 ## 💻 [10.1.1] - 2024-02-01
 ### Activity
-- ✨ Coming Soon
-- ✨ Coming Soon
+- ✨ Angelo, Myckle, Neo revise the EAV 
+- ✨ Uploaded the 
 
 🧊 Flight Booking
 
