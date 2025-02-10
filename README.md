@@ -266,6 +266,10 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 - ✨ Angelo, Myckle, Neo revise the EAV model
 - ✨ Uploaded the EAV model
 
+## 💻 [01.1.1] - 2024-02-10
+### Fix
+- ✨ Fix Node modules for Flight Booking Client source codebase
+
 🧊 Flight Booking
 
 <!-- This comment is intended for commiting message in pull-request 
