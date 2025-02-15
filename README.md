@@ -275,6 +275,11 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 - ✨ Fix EAV and Normalization
 - ✨ Revise the Entity Attributes View model
 
+## 💻 [01.1.2] - 2024-02-15
+### Changes
+- ✨ Fix EAV and Normalization
+- ✨ Revise the Entity Attributes View model
+
 🧊 Flight Booking
 
 <!-- This comment is intended for commiting message in pull-request 
