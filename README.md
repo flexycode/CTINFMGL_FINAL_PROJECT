@@ -68,73 +68,29 @@ Coming Soon
 ## 🧊 Database Schema
 #### SQL
 ```
--- Users Table
-CREATE TABLE Users (
-    UserID SERIAL PRIMARY KEY,
-    CustomerID INT REFERENCES CustomerInfo(CustomerID),
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    Username VARCHAR(50) UNIQUE NOT NULL,
-    Password VARCHAR(255) NOT NULL, -- Use hashed passwords for security
-    If_admin BOOLEAN DEFAULT FALSE
-);
-
--- TravelBookings Table
-CREATE TABLE TravelBookings (
-    BookingID SERIAL PRIMARY KEY,
-    UserID INT REFERENCES Users(UserID),
-    PaymentID INT REFERENCES PaymentDetails(PaymentID),
-    CustomerID INT REFERENCES CustomerInfo(CustomerID),
-    FlightID INT REFERENCES FlightDetails(FlightID),
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- PaymentDetails Table
-CREATE TABLE PaymentDetails (
-    PaymentID SERIAL PRIMARY KEY,
-    PaymentStatus VARCHAR(50) NOT NULL,
-    Price DECIMAL(10, 2) NOT NULL,
-    PaymentType VARCHAR(50) NOT NULL
-);
-
--- FlightDetails Table
-CREATE TABLE FlightDetails (
-    FlightID SERIAL PRIMARY KEY,
-    ArrivalTime TIMESTAMP NOT NULL,
-    Destination VARCHAR(100) NOT NULL,
-    DepartureTime TIMESTAMP NOT NULL,
-    DepartedAt TIMESTAMP,
-    NumberOfTravelers INT NOT NULL,
-    PlaneName VARCHAR(100),
-    PlaneType VARCHAR(50),
-    TicketType VARCHAR(50)
-);
-
--- Itinerary Table
-CREATE TABLE Itinerary (
-    ItineraryID SERIAL PRIMARY KEY,
-    VanPlateNumber VARCHAR(20),
-    VanType VARCHAR(50),
-    VanPickupTime TIMESTAMP,
-    VanDropTime TIMESTAMP,
-    HotelName VARCHAR(100),
-    HotelAddress VARCHAR(255)
-);
-
--- CustomerInfo Table
-CREATE TABLE CustomerInfo (
-    CustomerID SERIAL PRIMARY KEY,
-    FirstName VARCHAR(50) NOT NULL,
-    LastName VARCHAR(50) NOT NULL,
-    DateOfBirth DATE NOT NULL,
-    Age INT,
-    Email VARCHAR(100) UNIQUE NOT NULL,
-    ContactNo VARCHAR(20),
-    ID_type VARCHAR(50)
-    PassportNumber VARCHAR(50), -- Added passport number
-    Nationality VARCHAR(50) -- Added nationality
-);
+Coming Soon
 ```
+## 🧊 Data Insertion Example
+sql
+```
+INSERT INTO `flights` (departure_city, arrival_city, flight_date, duration_hours, base_price, flight_status) VALUES
+('New York', 'London', '2024-11-10', 7, 500.00, 'Full'),
+('Los Angeles', 'Paris', '2024-11-11', 10, 900.00, 'Available');
+
+INSERT INTO `users` (username, password_hash, role, email, phone_number) VALUES
+('justin', '$2b$10$yFTXogxecYrNSRLvFMb.dej4A4snSkHF72ZLItUjwrDFT16tlHCvK', 'admin', 'admin@example.com', '1234567890');
+
+INSERT INTO `carts` (flight_id, user_id) VALUES
+(1, 1);
+
+INSERT INTO `seats` (flight_id, seat_number, class, status, seat_price) VALUES
+(1, '1A', 'Economy', 'Available', 100.00),
+(1, '1B', 'Economy', 'Booked', 100.00);
+
+INSERT INTO `flight_names` (flight_id, region, name) VALUES
+(1, 'Europe', 'Transatlantic Express');
+```
+
 
 <!-- Data Model Image link down below -->
 ## 🧊 Data Model
