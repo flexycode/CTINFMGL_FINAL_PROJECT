@@ -217,26 +217,30 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 ### Added
 - ✨ Custer Uploaded ERD Diagram
     
-## 💻 [10.1.1] - 2024-02-01
+## 💻 [10.1.1] - 2025-02-01
 ### Activity
 - ✨ Angelo, Myckle, Neo revise the EAV model
 - ✨ Uploaded the EAV model
 
-## 💻 [01.1.1] - 2024-02-10
+## 💻 [01.1.1] - 2025-02-10
 ### Fix
 - ✨ Fix Node modules for Flight Booking Client source codebase
 
-## 💻 [01.1.2] - 2024-02-12
+## 💻 [01.1.2] - 2025-02-12
 ### Changes
 - ✨ Fix EAV and Normalization
 - ✨ Revise the Entity Attributes View model
 
-## 💻 [01.1.2] - 2024-02-16
+## 💻 [01.1.2] - 2025-02-16
 ### Added
 - ✨ FrontEnd (Client) for our Flight Booking 
 ### Changes
 - ✨ Fix attributes for EAV and Normalization
 - ✨ Revision for Backend and database
+
+## 💻 [01.1.2] - 2025-02-21
+### Added
+- ✨ Revise ERD
 
 🧊 Flight Booking
 
