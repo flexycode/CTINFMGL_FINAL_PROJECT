@@ -52,7 +52,7 @@ The Flight Booking App is a web application designed to simplify the process of 
 * **Frontend:** [React.js](https://react.dev/) or Next.js (JavaScript)
 * **Backend:** [Node.js](https://nodejs.org/en) with [Express.js](https://expressjs.com/) or [NestJS](https://nestjs.com/) (Node.js framework)
 * **Database:** PostgreSQL (Recommended for its robustness and scalability; If we choose SQL standard; It depends on the flow and overall decicion)
-* **Database:** [MongoDB](https://www.mongodb.com/) (database alternative choice; tentative If we choose NoSQL and JSON-like documents)
+* **Database:** [MySQL](https://www.mysql.com/) for flexible use of SQL
 * **Authentication:** JWT (JSON Web Tokens)
 * **Payment Gateway:** Stripe or PayPal ( Not required!)
 * **State Management:** Redux or Context API
@@ -61,14 +61,42 @@ The Flight Booking App is a web application designed to simplify the process of 
 
 ## 🕵️ Resources
 ```
+https://dokploy.com/#pricing)
+```
+
+# 💻 How to Run this Application
+
+## 👷 Install Dependencies
+Run
+```
+npm install
+```
+
+## 🚀 Run React-app
+```
+cd frontend
+npm start
+```
+
+## 🚍 Run Node.js 
+Open another terminal in the current codebase to run nodejs for VS Code or other IDE base on what you are using such as Webstorm
+```
+cd backend
+node index.js
+```
+
+<!-- Front-End Overview -->
+# Screenshot of Project Overview
+```
 Coming Soon
 ```
+
 
 <!-- Database Schema Revision, Also image for Data Model and Entity Relationship Diagram ERD. Link should be point out through assets folder for editing README.md -->
 ## 🧊 Database Schema
 #### SQL
 ```
-Coming Soon
+See Database folder above
 ```
 ## 🧊 Data Insertion Example
 sql
@@ -93,23 +121,45 @@ INSERT INTO `flight_names` (flight_id, region, name) VALUES
 
 
 <!-- Data Model Image link down below -->
-## 🧊 Data Model
+# 🧊 Data Model
 ```
-Image Coming Soon
+Description Coming Soon
 ```
+
+## 🧊 Flow Chart
+
+<!-- Flow Chart Image -->
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Flow%20Chart.png" />
 
 <!-- Entity Attribute Value Model Image link down below -->
 ## 🧊 Entity Attribute Value Model
 ```
-Image Coming Soon
+Entity Attribute Value Model will be uploaded in this section file after 💥 Myckle Vince fininish the Normalization
 ```
 
+<!-- Normalization link down below -->
+## 🧊 Normalization
+```
+Table will be uploaded in the documentation file after 💥 Myckle Vince fininish the EAV
+```
 
 <!-- Entity Relationship Diagram Image link down below -->
 ## 🧊 Entity Relationship Diagram
 
 <!-- ERD Image -->
-<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Flight%20Booking%20ERD%20DRAFT%20V2.png" />
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Entity%20Relationship%20Diagram%20-%20ALA.png" />
+
+<!-- Sequence Diagram Image link down below -->
+## 🧊 Sequence Diagram
+
+<!-- Sequence Diagram Image -->
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Sequence%20Diagram.png" />
+
+<!-- Cloud Architecture Image link down below -->
+## 🧊 Cloud Architecture
+
+<!-- Cloud Architecture Image -->
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Cloud%20Architecture.png" />
 
 <!-- 📜 Folder Structure down below -->
 # 📜 Folder Structure  
