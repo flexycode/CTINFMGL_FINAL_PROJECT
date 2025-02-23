@@ -292,6 +292,11 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 ### Added
 - ✨ Revise ERD
 
+## 💻 [01.1.2] - 2025-02-23
+### Added
+- ✨ Upload ERD
+- ✨ Upload Screenshot for Flight Booking
+
 🧊 Flight Booking
 
 <!-- This comment is intended for commiting message in pull-request 
