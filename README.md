@@ -85,10 +85,22 @@ node index.js
 ```
 
 <!-- Front-End Overview -->
-# Screenshot of Project Overview
-```
-Coming Soon
-```
+# 🚀 Screenshot of Project Overview
+
+### 🌟 Design Overview
+
+<!-- Front Page -->
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Front%20Page.png" />
+
+### 🌟 Search Flight
+
+<!-- Search Flight -->
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Search%20Flight.png" />
+
+### 🌟 Background Video 
+
+<!-- Background Video -->
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Video%20Page.png" />
 
 
 <!-- Database Schema Revision, Also image for Data Model and Entity Relationship Diagram ERD. Link should be point out through assets folder for editing README.md -->
@@ -296,6 +308,7 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 - ✨ Upload ERD
 - ✨ Upload Screenshot for Flight Booking
 - ✨ Push the Front-end folder
+- ✨ Update Changelogs for Flight Booking
 
 🧊 Flight Booking
 
