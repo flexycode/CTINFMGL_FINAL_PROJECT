@@ -1,0 +1,218 @@
+.card_body {
+    font: 16px "Helvetica Neue", Helvetica, sans-serif;
+    background: #d8d7d7;
+    color: #838181;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+a {
+    color: #000;
+}
+
+.header {
+    text-align: center;
+    width: 100%; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-weight: 200;
+}
+
+.header__title {
+    font-size: 50px;
+    color: #333;
+}
+
+.header__subtitle {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.header__body {
+    min-height: 32px;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.panel {
+    position: relative;
+    left: -20%;
+    margin-left: 20px;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    float: left;
+}
+
+.card {
+    overflow: hidden;
+    font: 16px/1.5 'Helvetica Neue', Helvetica, sans-serif;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%; 
+    max-width: 425px; 
+    height: 270px;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 50px;
+    color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
+
+.card__number {
+    font-size: 30px;
+    padding: 90px 0 15px;
+    text-align: center;
+}
+
+.card__expiry-date {
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.card__owner {
+    text-align: left;
+}
+
+.card__logo {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.card__strip {
+    background: #000;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.card__signature {
+    float: left;
+    width: 65%;
+    height: 40px;
+    margin-left: 10px;
+    background: #999;
+}
+
+.card__ccv {
+    float: left;
+    margin-top: 5px;
+    padding: 7px;
+    background: #fff;
+    color: #111;
+    line-height: 1;
+}
+
+.card--front {
+    font-size: 16px;
+    font-family: 'Source Code Pro';
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+}
+
+.card--back {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+.input-fields {
+    position: relative;
+    top: -600px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+}
+
+.input-fields label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.input-fields input {
+    padding: 8px;
+    width: 200px; 
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.input-fields button{
+padding: 20px;
+color: white;
+background-color: #3937aa;
+position: relative;
+left: -7%;
+outline: none;
+border: none;
+border-radius: 5px;
+}
+
+.input-fields button:hover{
+    scale: 1.1;
+    background-color: #2a28a3;
+    cursor: pointer;
+}
+
+
+@media (min-width: 600px) {
+   
+    .input-fields {
+        flex-direction: row; 
+        justify-content: flex-end; 
+        width: 100%; 
+        text-align: end;
+    }
+
+    .input-fields label {
+        margin: 10px;
+        width: 100% !important;
+    }
+
+    .input-fields input {
+        width: auto; 
+    }
+}
+
+@media (max-width: 880px) {
+    .card {
+        width: 90%; 
+        max-width: none; 
+    }
+
+    .input-fields {
+        left: 200px;
+        text-align: center;
+        position: static;
+        width: 100%;
+    }
+
+    .input-fields input {
+        width: 80%;
+    }
+    .input-fields label {
+        padding: 10px;  
+    }
+    .panel{
+        position:static;
+    }
+}

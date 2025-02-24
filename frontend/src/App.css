@@ -1,0 +1,67 @@
+/* Reset default margin and padding for all elements */
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden ;
+}
+
+/* Styles for the timeout notification */
+.timeout{
+  position: fixed;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-left: 50% ;
+  transform: translateX(-50%);
+  width: 60%;
+  margin-top: 30px;
+  justify-content: center;
+  text-align: center;
+  height: 270px;
+  z-index: 9999;
+}
+
+/* Styles for the heading inside the timeout notification */
+.timeout h2{
+  margin-top: 10px;
+}
+
+/* Styles for the div inside the timeout notification */
+.timeout div{
+  margin-top: 40px;
+}
+
+/* Styles for the button inside the timeout notification */
+.timeout button{
+  padding: 10px;
+  color: white;
+  background-color:#3d88e3 ;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 10% ;
+  box-shadow: 0 0 10px rgba(163, 24, 24, 0.1);
+  width: 80%;
+}
+
+/* Styles for the close button in the timeout notification */
+.close-chat-timeout{
+  width: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 93% ;
+}
+
+/* Responsive styles for screens smaller than 600px */
+@media screen and (max-width: 600px){
+  .timeout{
+    .close-chat-timeout{
+      margin-left: 90% ;
+    }
+  }
+
+/* Hover effect for the button inside the timeout notification */ 
+}
+.timeout button:hover{
+  background-color: #316cb4;
+}

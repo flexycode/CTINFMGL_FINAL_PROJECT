@@ -1,0 +1,29 @@
+.admin-nav{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.admin-nav ul{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.admin-nav ul li{
+    width: 40%;
+    margin: 10px;
+    background-color:#3d88e3;
+    border-radius: 10px ;
+    padding: 10px;
+    color: white;
+    transition: 1s;
+}
+
+.admin-nav ul li:hover{
+    background-color: #2a68b3;
+    transform: scale(1.1);
+    cursor: pointer;
+}

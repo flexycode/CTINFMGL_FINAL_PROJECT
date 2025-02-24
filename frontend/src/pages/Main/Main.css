@@ -1,0 +1,53 @@
+.main-body {
+    background-image: url('../../images/philippinesWelcome.jpg');
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .main-body {
+        background-image: url('../../images/philippinesWelcome.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        height: 95vh;
+    }
+}
+
+/* Chat button styles */
+.chat-button{
+    position: fixed;
+    top: 85vh;
+    left: 98%;
+    background-color: none;
+    border: none;
+    border-radius: 45px;
+}
+
+/* Chat button image styles */
+.chat-button img{
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+/* Responsive styles for screens smaller than 1300px */
+@media (max-width: 1300px) {
+.chat-button{
+    left: 95%;
+}
+}
+
+/* Responsive styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    .chat-button{
+        left: 85%;
+    }
+    }

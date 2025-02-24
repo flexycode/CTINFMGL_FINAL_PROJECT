@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap");
+.profile-container {
+  background-color: whitesmoke;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5em;
+  max-width: 800px;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.profile-left-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #3d88e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-left-section .profile-data img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: rgb(212, 210, 210);
+  border: 4px solid black;
+  padding: 3px;
+}
+
+.profile-right-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-right-section h3 {
+  border-bottom: 2px solid black;
+}
+
+.profile-data {
+  text-align: center;
+}
+
+.profile-data span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.email,
+.phone {
+  margin-bottom: 20px;
+}
+
+.email span,
+.phone span {
+  display: inline-block;
+}
+
+.profile-button {
+  color: white;
+  background-color: #3d88e3;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.profile-button:hover {
+  background-color: #204370;
+  cursor: pointer;
+}
+
+.profile-button-home{
+  width: 300px;
+  color: white;
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #3d88e3;
+  border: none;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.profile-button-home:hover{
+  background-color: #2a5c9a;
+}
+
+.profile-loader {
+  color: #2934b0;
+  font-size: 100px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: absolute;
+  left: 45%;
+  margin-top: 30vh;
+  margin-bottom: 10px;
+  transform: translateZ(0);
+  animation: mltShdSpin1 1.7s infinite ease, round1 1.7s infinite ease;
+}
+
+@keyframes mltShdSpin1 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em,
+    0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+    0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 
+    0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 
+    0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, 
+    -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, 
+    -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+     -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, 
+     -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+     -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, 
+     -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 
+    0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+
+@keyframes round1 {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+ 
+
+@media (max-width: 600px) {
+  .profile-container {
+    width: 90%;
+  }
+  .profile-left-section {
+    margin-bottom: 20px;
+  }
+  .profile-left-section,
+  .profile-right-section {
+    flex: 0 0 100%;
+    padding: 10px;
+  }
+
+  .profile-left-section .profile-data img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-button {
+    width: 100%;
+  }
+  .profile-loader{
+  left: 40%;
+  }
+}

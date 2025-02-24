@@ -1,0 +1,102 @@
+.flights {
+    padding: 20px;
+    background-color: #202873;
+    min-height: 85vh;
+    color: white;
+  }
+ i{
+  overflow: hidden;
+  position: relative;
+  font-size: 1.2em;
+  left: 95%;
+  z-index: 1;
+ }
+ i:hover{
+  cursor: pointer;
+  color: red;
+ }
+  .flights h1 {
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .empty-message {
+    font-size: 24px;
+    color: #ccc;
+  }
+  
+  .myflights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    overflow: hidden;
+  }
+  
+  .flight-card {
+    background-color: white;
+    color: #202873;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+  }
+  
+  .flight-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .flight-image {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .flight-info {
+    padding: 15px;
+  }
+  
+  .flight-info h2 {
+    margin-bottom: 10px;
+    color: #202873;
+  }
+  
+  .flight-info p {
+    margin: 5px 0;
+    color: #555;
+
+  }
+
+  .flight-info button{
+    width: 100%;
+    padding: 10px;
+    background-color: #323fbb;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+  }
+
+  .flight-info button:hover{
+    background-color: #202873;
+    cursor: pointer;
+  }
+    @media (max-width: 768px) {
+      .flight-info div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+      }
+      .myflights-grid{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+      .flight-info button{
+        margin-top: 10px;
+      }
+      .close-flight{
+        width: 15px;
+        left: 92%;
+      }
+
+    }
+
+  

@@ -1,0 +1,122 @@
+/* Blue background and centered container */
+.background-signin {
+    background-color: #1E90FF; /* Blue background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* White container for sign-in form */
+  .signin-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Login button styling */
+  .login-btn {
+    background-color: #ff0000; /* Red background for login */
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .login-btn:hover {
+    background-color: #d40000; /* Darker red on hover */
+  }
+  
+  /* Sign Up button styling */
+  .signup-btn {
+    background-color: transparent;
+    color: #ff0000; /* Red text for sign up */
+    border: 2px solid #ff0000;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .signup-btn:hover {
+    background-color: #ff0000; /* Red background on hover */
+    color: white;
+  }
+  
+  /* Forgot Password link */
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password a {
+    color: #808080;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for the login error message */
+  .login-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .warning{
+    height: 40px;
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 15%;
+    background-color: rgb(210, 91, 91);
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+  }
+
+  .message{
+    height: 40px;
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 15%;
+    background-color: rgb(41, 134, 37);
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+  }

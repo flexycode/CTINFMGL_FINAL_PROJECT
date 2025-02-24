@@ -1,0 +1,54 @@
+.welcome-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .welcome-container h1 {
+    font-size: 7em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .travel{
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  .hollow{
+    margin-top: -200px ;
+    color: transparent;
+    -webkit-text-stroke: 4px white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .welcome-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .travel-button{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+  @media (max-width: 768px) {
+    .hollow{
+      -webkit-text-stroke: 1px white;
+    }
+    .travel{
+      top: 30%;
+      z-index: 0;
+    }
+    .welcome-container h1 {
+      font-size: 3em;
+      margin-top: 20%;
+      z-index: 0;
+    }
+    .travel-button{
+      margin-top: 20%;
+    }
+  }
