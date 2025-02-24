@@ -117,7 +117,7 @@ INSERT INTO `flights` (departure_city, arrival_city, flight_date, duration_hours
 ('Los Angeles', 'Paris', '2024-11-11', 10, 900.00, 'Available');
 
 INSERT INTO `users` (username, password_hash, role, email, phone_number) VALUES
-('justin', '$2b$10$yFTXogxecYrNSRLvFMb.dej4A4snSkHF72ZLItUjwrDFT16tlHCvK', 'admin', 'admin@example.com', '1234567890');
+('akosidogi', '$2b$10$yFTXogxecYrNSRLvFMb.dej4A4snSkHF72ZLItUjwrDFT16tlHCvK', 'admin', 'admin@example.com', '1234567890');
 
 INSERT INTO `carts` (flight_id, user_id) VALUES
 (1, 1);
