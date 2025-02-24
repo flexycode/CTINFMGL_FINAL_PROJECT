@@ -44,8 +44,6 @@ The Flight Booking App is a web application designed to simplify the process of 
 
 🚀 5. **Admin Panel:** Admins can manage flights, users, and payments.
 
-🚀 6. **Itinerary Management:** Users can view their travel itineraries, including flight details, hotel bookings, and transportation details.
-
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
 ## 💻 Techstacks
 #### PERN STACK 
@@ -67,12 +65,13 @@ https://dokploy.com/#pricing)
 # 💻 How to Run this Application
 
 ## 👷 Install Dependencies
-Run
+Run npm install to to install node modules
 ```
 npm install
 ```
 
 ## 🚀 Run React-app
+Direct to frontend folder after you install the node modules
 ```
 cd frontend
 npm start
@@ -292,10 +291,11 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 ### Added
 - ✨ Revise ERD
 
-## 💻 [01.1.2] - 2025-02-23
+## 💻 [01.1.2] - 2025-02-24
 ### Added
 - ✨ Upload ERD
 - ✨ Upload Screenshot for Flight Booking
+- ✨ Push the Front-end folder
 
 🧊 Flight Booking
 
