@@ -310,6 +310,10 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 - ✨ Push the Front-end folder
 - ✨ Update Changelogs for Flight Booking
 
+## 💻 [01.1.2] - 2025-02-24
+### Added
+- ✨ Upload Normalization
+
 🧊 Flight Booking
 
 <!-- This comment is intended for commiting message in pull-request 
