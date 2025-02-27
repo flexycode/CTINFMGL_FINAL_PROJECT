@@ -7,3 +7,4 @@ CREATE TABLE `carts` (
   FOREIGN KEY (`flight_id`) REFERENCES `flights` (`flight_id`),
   FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ hhh
