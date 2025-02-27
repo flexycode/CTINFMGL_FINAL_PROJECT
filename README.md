@@ -150,8 +150,16 @@ Entity Attribute Value Model will be uploaded in this section file after 💥 My
 
 <!-- Normalization link down below -->
 ## 🧊 Normalization
+
+<!-- Normalization Images -->
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/documentation/images/Normalization%20SS-1.png" />
+
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/documentation/images/Normalization%20SS-2.png" />
+
+<img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/documentation/images/Normalization%20SS-3.png" />
+
 ```
-Table will be uploaded in the documentation file after 💥 Myckle Vince fininish the EAV
+Full Overview of Normalization is in the Folder of documentation
 ```
 
 <!-- Entity Relationship Diagram Image link down below -->
@@ -224,7 +232,7 @@ Some changes need to be address
 # 🔑 License     
 
 ```
-Coming Soon
+Coming Soon In the License tab 
 ```
 ## National University of Manila License   
 
