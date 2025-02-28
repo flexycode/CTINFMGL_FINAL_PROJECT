@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Email Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      h1 {
+        font-size: 24px;
+        color: #4caf50;
+        margin-bottom: 20px;
+      }
+      .details,
+      .ticket-info,
+      .purchase-summary {
+        font-size: 16px;
+        color: #555;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 320px;
+      }
+      .details p,
+      .ticket-info p,
+      .purchase-summary p {
+        margin: 8px 0;
+      }
+      .details span.label,
+      .ticket-info span.label,
+      .purchase-summary span.label {
+        font-weight: bold;
+        color: #333;
+        display: block;
+      }
+      .ticket-info {
+        background-color: #f7f7f7;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+      .purchase-summary {
+        background-color: #f0f8ff;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+      .thank-you {
+        font-size: 18px;
+        color: #4caf50;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .footer {
+        font-size: 14px;
+        color: #777;
+        margin-top: 10px;
+      }
+      .ticket-header {
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .footer {
+        color: #777;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="email-container">
+        <h1>Ticket Confirmation</h1>
+        
+        <div class="details">
+          <p><span class="label">FlightId:</span><%= id %></p>
+          <p><span class="label">Departure:</span><%= flightDeparture %></p>
+          <p><span class="label">Arrival:</span><%= flightArrival %></p>
+          <p><span class="label">Name:</span><%= name %></p>
+          <p><span class="label">Email:</span><%= email %></p>
+          <p><span class="label">Date:</span><%= date %></p>
+          <p><span class="label">Price:</span><%= price %></p>
+        </div>
+        
+        <div class="ticket-info">
+          <div class="ticket-header">Ticket Information</div>
+          <p><span class="label">Seat Number:</span><%= seatNumber %></p>
+          <p><span class="label">Seat Class:</span><%= seatClass %></p>
+        </div>
+        
+        <div class="purchase-summary">
+          <div class="ticket-header">Purchase Summary</div>
+          <p><span class="label">Total Price:</span><%= price %>USD</p>
+          <p><span class="label">Transaction ID:</span>123abc123b</p>
+        </div>
+
+        <div class="thank-you">Thank you for your trust!</div>
+        <div class="footer">Have a nice flight :)</div>
+      </div>
+    </center>
+  </body>
+</html>
