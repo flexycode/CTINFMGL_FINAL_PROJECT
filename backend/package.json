@@ -13,7 +13,11 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
+<<<<<<< HEAD
     "express": "^4.21.1",
+=======
+    "express": "^4.21.2",
+>>>>>>> 6153a59 (Added comments to backend code for better readability)
     "form-data": "^4.0.1",
     "fs": "^0.0.1-security",
     "install": "^0.13.0",
