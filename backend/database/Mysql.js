@@ -1,9 +1,5 @@
 const mysql = require("mysql2");
 
-<<<<<<< HEAD
-=======
-// Create a database connection using MySQL
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 var connection = mysql.createConnection({
   host: "localhost",
   database: "web",

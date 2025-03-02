@@ -2,16 +2,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const connection = require("../database/Mysql");
 
-<<<<<<< HEAD
-=======
-/**
- * Registers a new user in the database.
- * - Checks if the username already exists.
- * - Checks if the email is already in use.
- * - Hashes the password before storing it.
- * - Inserts the new user into the database with the default role 'user'.
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 const registerUser = (username, password, email, phoneNumber, callback) => {
   connection.query(
     "SELECT username FROM user WHERE username = ?",
@@ -41,16 +31,7 @@ const registerUser = (username, password, email, phoneNumber, callback) => {
   );
 };
 
-<<<<<<< HEAD
 
-=======
-/**
- * Authenticates a user by checking their credentials.
- * - Retrieves the stored hashed password from the database.
- * - Compares the provided password with the hashed password.
- * - If valid, generates a JWT token for authentication.
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 const loginUser = (username, password, callback) => {
   connection.query(
     "SELECT userID, username, password, role, email FROM user WHERE username = ?",
@@ -78,14 +59,6 @@ const loginUser = (username, password, callback) => {
   );
 };
 
-<<<<<<< HEAD
-=======
-/**
- * Retrieves the profile of a user using their JWT token.
- * - Decodes the token to get the userID.
- * - Fetches user details from the database.
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 const getUserProfile = (token, callback) => {
   try {
     const decoded = jwt.verify(token, process.env.SECRET_KEY);
@@ -99,14 +72,6 @@ const getUserProfile = (token, callback) => {
   }
 };
 
-<<<<<<< HEAD
-=======
-/**
- * Updates the user's profile information.
- * - Checks if the new username is already taken.
- * - Updates the username and phone number in the database.
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 const updateUserProfile = (token, username, phoneNumber, callback) => {
   try {
     const decoded = jwt.verify(token, process.env.SECRET_KEY);
