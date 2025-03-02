@@ -1,10 +1,24 @@
+// Import required dependencies
 const express = require("express");
 const router = express.Router();
-const {getSeats,addSeat} = require("../controller/seatController");
+const { getSeats, addSeat } = require("../controller/seatController");
 const verifyToken = require("../auth/userAuth");
 
-router.post("/",verifyToken,getSeats);
-router.put("/addSeat",verifyToken,addSeat);
+/**
+ * Handles GET requests to retrieve seat information
+ * @route POST /
+ * @access Private (requires authentication)
+ * @description Returns available seat information for the authenticated user
+ */
+router.post("/", verifyToken, getSeats);
+
+/**
+ * Handles PUT requests to book a seat
+ * @route PUT /addSeat
+ * @access Private (requires authentication)
+ * @description Updates seat status to 'Booked' for the specified seat
+ */
+router.put("/addSeat", verifyToken, addSeat);
 
 // router.put("/addSeat", (req, res) => {
 //   const { seatID } = req.body;
@@ -25,7 +39,5 @@ router.put("/addSeat",verifyToken,addSeat);
 //   });
 // });
 
-
-
-
+// Export the configured router for use in main application
 module.exports = router;
