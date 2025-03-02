@@ -1,12 +1,5 @@
 const connection = require("../database/Mysql");
 
-<<<<<<< HEAD
-=======
-/**
- * Retrieves flights based on the provided departure, arrival, and date.
- * If no filters are provided, it fetches all available flights.
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 exports.getFlightsService = (departure, arrival, date, callback) => {
   const sql = departure && arrival && date
     ? "SELECT * FROM flights WHERE `From` = ? AND `To` = ? AND `Date` = ?"
@@ -22,12 +15,6 @@ exports.getFlightsService = (departure, arrival, date, callback) => {
   });
 };
 
-<<<<<<< HEAD
-=======
-/**
- * Fetches a specific flight by its flight ID.
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 exports.getFlightName = (flightId,callback) =>{
   connection.query('Select * from flights where flightId=?',[flightId],(err,result)=>{
     if(err){
@@ -37,13 +24,6 @@ exports.getFlightName = (flightId,callback) =>{
   })
 }
 
-<<<<<<< HEAD
-=======
-/**
- * Adds a new flight to the database with the given details.
- * Sets the default flight status to "Available".
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 exports.addFlightService = (flightDetails, callback) => {
   const { from, to, date, duration, price } = flightDetails;
 
@@ -58,12 +38,6 @@ exports.addFlightService = (flightDetails, callback) => {
   });
 };
 
-<<<<<<< HEAD
-=======
-/**
- * Retrieves the latest flight ID from the database.
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 exports.getLatestFlightId = (callback) => {
   const sql = "SELECT FlightID FROM flights ORDER BY FlightID DESC LIMIT 1";
 
@@ -75,13 +49,6 @@ exports.getLatestFlightId = (callback) => {
   });
 };
 
-<<<<<<< HEAD
-=======
-/**
- * Adds predefined seat records for a given flight.
- * Inserts both Economy and Premium seats with alternating availability status.
- */
->>>>>>> 6153a59 (Added comments to backend code for better readability)
 exports.addSeatsService = (flightID, callback) => {
   const seatInsertionSql = `
     INSERT INTO seats (FlightID, SeatNumber, Class, Status, seat_price) VALUES
