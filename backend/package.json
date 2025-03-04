@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,13 +20,13 @@
     "fs": "^0.0.1-security",
     "install": "^0.13.0",
     "jsonwebtoken": "^9.0.2",
-    "mailgun.js": "^10.2.3",
     "multer": "^1.4.5-lts.1",
-    "mysql": "^2.18.1",
     "mysql2": "^3.11.3",
     "nodemailer": "^6.9.16",
     "npm": "^10.9.0",
-    "openai": "^4.86.1",
-    "smtp-server": "^3.13.6"
+    "openai": "^4.86.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }

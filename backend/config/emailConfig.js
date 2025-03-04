@@ -1,15 +1,12 @@
-/*
-Don't touch or change or write any comments on this file. This file is going to be subjected for changes.
-*/
+const nodemailer = require('nodemailer');
 
-
-const Mailgun = require("mailgun.js");
-const formData = require("form-data");
-
-const mailgun = new Mailgun(formData);
-const mg = mailgun.client({
-  username: "api",
-  key: process.env.MAILGUN_KEY || "your-mailgun-api-key",
+const transporter = nodemailer.createTransport({
+  host: 'smtp-relay.brevo.com',
+  port: 587,
+  auth: {
+    user: process.env.BREVO_USER,
+    pass: process.env.BREVO_KEY
+  }
 });
 
 exports.sendEmail = async (to, subject, text) => {
@@ -18,8 +15,8 @@ exports.sendEmail = async (to, subject, text) => {
   }
 
   try {
-    const msg = await mg.messages.create("artificial.ledger", {  
-      from: "flexycode.dev@gmail.com", 
+    const msg = await transporter.sendMail({
+      from: "flexycode.dev@gmail.com",
       to, 
       subject,
       text,
@@ -32,8 +29,3 @@ exports.sendEmail = async (to, subject, text) => {
     throw new Error("An error occurred while sending the email.");
   }
 };
-
-/*
-Don't touch or change or write any comments on this file. This file is going to be subjected for changes.
-Subjected to change for email API : Brevo https://app-smtp.brevo.com/
-*/
