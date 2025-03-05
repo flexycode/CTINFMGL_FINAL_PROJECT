@@ -182,7 +182,69 @@ Full Overview of Normalization is in the Folder of documentation
 <!-- 📜 Folder Structure down below -->
 # 📜 Folder Structure  
 ```
-Coming Soon
+Project Name/
+│
+├── client/
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   └── manifest.json
+│   │
+│   └── src/
+│       ├── components/
+│       │   └── (reusable components)
+│       │
+│       ├── pages/
+│       │   ├── Home.js
+│       │   ├── Login.js
+│       │   ├── Register.js
+│       │   ├── FlightSearch.js
+│       │   └── Profile.js
+│       │
+│       ├── services/
+│       │   └── api.js  # Axios configuration goes here
+│       │
+│       ├── utils/
+│       │   └── (utility functions)
+│       │
+│       ├── App.css
+│       ├── App.js
+│       └── index.js
+│
+├── server/
+│   ├── config/
+│   │   └── database.js
+│   │
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── flightController.js
+│   │   └── userController.js
+│   │
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Flight.js
+│   │   └── Booking.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── flightRoutes.js
+│   │   └── userRoutes.js
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── server.js
+│
+├── database/
+│   └── init-scripts/
+│       ├── users_table.sql
+│       ├── flights_table.sql
+│       └── bookings_table.sql
+│
+└── README.md
 ```
 
 <!-- 🏆 Contributers down below -->
