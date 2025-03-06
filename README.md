@@ -180,7 +180,7 @@ Full Overview of Normalization is in the Folder of documentation
 <img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Cloud%20Architecture.png" />
 
 <!-- 📜 Folder Structure down below -->
-# 📜 Folder Structure  
+# 📜 Folder Structure  ( WILL UPDATE LATER)!!!
 ```
 Project Name/
 │
@@ -382,6 +382,10 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 ## 💻 [01.1.2] - 2025-02-24
 ### Added
 - ✨ Upload Normalization
+
+## 💻 [01.1.2] - 2025-03-05
+### Added
+- ✨ Thesis Project Deliveration
 
 🧊 Flight Booking
 
