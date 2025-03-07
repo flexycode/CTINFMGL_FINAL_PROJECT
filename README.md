@@ -64,7 +64,8 @@ https://dokploy.com/#pricing)
 # 💻 How to Run this Application
 
 ## 👷 Install Dependencies
-Run npm install to to install node modules
+Run npm install to to install node modules 
+Also you direct already to frontend folder and run npm start
 ```
 npm install
 ```
@@ -332,12 +333,17 @@ Your dedication to advancing knowledge in this field and your commitment to educ
 Chronological list of updates, bug fixes, new features, and other modifications for our Flight Booking Appplication.
 
 ## 💻 [01.1.5] - 2024-01-29      
-### Added
+### Role & Project Management
 - 💻 Final Project requirements for our project
 - ✨ Create a repository for this Flight Booking App
 - ✨ Brainstorming for our Project requirements  
-- ✨ Coming Soon 💻 🚀
-- ✨ Coming Soon 🧠 🔑
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) 💻 🚀 will be in-charge for Frontend Development & Technology stacks
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) 🧠 🔑 will be in-charge for Backend Development & Entity Relationship Diagram 
+- ✨ [Custer Valencerina](https://github.com/Cegeurun) 🧭 🧭 will be in-charge for SQL and debugging for backend, API and documentation
+- ✨ [Myckle Vince Natividad](https://github.com/Kyelkyel) 💥 💥 will be also in-charge for SQL, Backend, documentation and Normalization 
+- ✨ [Angelo Castillo](https://github.com/gabcsx) 🎲🎲 will be in-charge for creating Entity Attributes View (EAV)
+- ✨ [Neo Flores](https://github.com/moridin04) 🤖🤖 will be in-charge for creating the overall documentation of the Project
+- ✨ [Yeshua Venezuela](https://github.com/Yesh01) 🌟🌟 will be in-charge for suggesting a good design in the Frontend User Interface
 
 ## 💻 [01.1.1] - 2024-01-29
 ### Activity
@@ -345,49 +351,65 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 
 ## 💻 [01.1.1] - 2024-01-31
 ### Added
-- ✨ Custer Uploaded ERD Diagram
+- ✨ [Custer Valencerina](https://github.com/Cegeurun) Uploaded a schematic ERD Diagram from scratch and based on Draw.io
     
 ## 💻 [10.1.1] - 2025-02-01
 ### Activity
-- ✨ Angelo, Myckle, Neo revise the EAV model
+- ✨ [Angelo Castillo](https://github.com/gabcsx), [Myckle Vince Natividad](https://github.com/Kyelkyel), [Neo Flores](https://github.com/moridin04) revise the EAV model
 - ✨ Uploaded the EAV model
 
 ## 💻 [01.1.1] - 2025-02-10
 ### Fix
-- ✨ Fix Node modules for Flight Booking Client source codebase
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) Fixed Node modules for Flight Booking Client source codebase
 
 ## 💻 [01.1.2] - 2025-02-12
+### Fix
+- ✨ [Angelo Castillo](https://github.com/gabcsx) Fixed the EAV
+- ✨ [Myckle Vince Natividad](https://github.com/Kyelkyel) Revise the Normalization table
 ### Changes
-- ✨ Fix EAV and Normalization
 - ✨ Revise the Entity Attributes View model
+
+## 💻 [01.1.2] - 2025-02-12
+### Suggestion
+- ✨ [Yeshua Venezuela](https://github.com/Yesh01) created a proof-of-concept design for our Front-end UI design.
 
 ## 💻 [01.1.2] - 2025-02-16
 ### Added
-- ✨ FrontEnd (Client) for our Flight Booking 
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) successfully added the FrontEnd (Client) for our Flight Booking 
 ### Changes
-- ✨ Fix attributes for EAV and Normalization
-- ✨ Revision for Backend and database
+- ✨ [Myckle Vince Natividad](https://github.com/Kyelkyel) , [Custer Valencerina](https://github.com/Cegeurun) Fixed the attributes for EAV and Normalization
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) Revise the Backend and database
 
 ## 💻 [01.1.2] - 2025-02-21
 ### Added
-- ✨ Revise ERD
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) Revise the Entity Relationship Diagram
 
-## 💻 [01.1.2] - 2025-02-24
+## 💻 [01.1.2] - 2025-02-23
 ### Added
-- ✨ Upload ERD
-- ✨ Upload Screenshot for Flight Booking
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) Uploaded ERD
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) Uploaded the Screenshot for Flight Booking
 - ✨ Push the Front-end folder
-- ✨ Update Changelogs for Flight Booking
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) Update Changelogs for Flight Booking
+- ✨ [Custer Valencerina](https://github.com/Cegeurun) added a constructive comment for a specific function in the frontend (client-side)
+- ✨ [Myckle Vince Natividad](https://github.com/Kyelkyel) added a constructive comment for a specific function in the backend (server-side)
+- ✨ [Neo Flores](https://github.com/moridin04) successfully created the Entity Attributes View
+- ✨ [Angelo Castillo](https://github.com/gabcsx) created the first draft of the overall documentation
 
 ## 💻 [01.1.2] - 2025-02-24
 ### Added
-- ✨ Upload Normalization
+- ✨ [Myckle Vince Natividad](https://github.com/Kyelkyel) successfully created the Normalization
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) Uploaded Normalization in the documenation folder
 
 ## 💻 [01.1.2] - 2025-03-05
 ### Added
-- ✨ Thesis Project Deliveration
+- ✨ Thesis Project Deliveration for [CTINFMGL - INFORMATION MANAGEMENT](https://github.com/flexycode/CTINFMGL) 
 
-🧊 Flight Booking
+## 💻 [01.1.2] - 2025-03-07
+### Integration
+- ✨ [Custer Valencerina](https://github.com/Cegeurun) successfully created a codebase for a integration in [Brevo API for Email using node.js](https://github.com/Cegeurun/nodejsbrevo)
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) revise the folder tree structure
+  
+🧊 Flight Booking Application
 
 <!-- This comment is intended for commiting message in pull-request 
 Always use this "🧊 Flight Booking" for commiting message for "Pull-request"
