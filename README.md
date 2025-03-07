@@ -46,12 +46,13 @@ The Flight Booking App is a web application designed to simplify the process of 
 
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
 ## 💻 Techstacks
-#### PERN STACK 
-* **Frontend:** [React.js](https://react.dev/) or Next.js (JavaScript)
-* **Backend:** [Node.js](https://nodejs.org/en) with [Express.js](https://expressjs.com/) or (Node.js framework)
+#### MERN STACK 
+* **Frontend:** [React.js](https://react.dev/) (JavaScript framework)
+* **Backend:** [Node.js](https://nodejs.org/en) with [Express.js](https://expressjs.com/) (Node.js framework)
 * **Database:** [MySQL](https://www.mysql.com/) for flexible use of SQL
 * **Authentication:** JWT (JSON Web Tokens)
-* **Payment Gateway:** Stripe or PayPal ( Not required!)
+* **Payment Gateway:** Stripe or PayPal ( Not required!) we use local host authmanagement
+* **Email:** Brevo API 
 * **State Management:** Redux or Context API
 * **Styling:** CSS-in-JS (Styled-components) or Tailwind CSS
 * **Deployment:** [Vercel](https://vercel.com/) (for Next.js) or [Heroku](https://www.heroku.com/) or [Dokploy](https://dokploy.com/#pricing)
@@ -283,9 +284,9 @@ If you would like to contribute to the Flight Booking App, please follow these s
 
 ```bash
 Some changes need to be address
-- Coming Soon
-- Coming Soon
-- Coming Soon
+- Fix Bug in the Frontend
+- Fix Bug in the Backend
+- CRUD operation management in SQL Workbench
 ```
 
 ###### 🤖 If you encounter any issues or have suggestions, please open an issue to let us know.
