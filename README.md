@@ -4,7 +4,7 @@
 <img src="https://github.com/flexycode/CTINFMGL/blob/main/asset/Information-Management.png" />
 
 ### Subject & Section: [CTINFMGL - COM231](https://www.youtube.com/watch?v=dQw4w9WgXcQ)     
-### Professor: 👩 [Jensen A. Santillan](https://www.youtube.com/watch?v=Zi_XLOBDo_Y)                    
+### Professor: 👩 [Jensen A. Santillan](https://www.youtube.com/watch?v=_kUFws-dHEI)                    
 ### No. of Units: [3 Units](https://www.youtube.com/watch?v=d_Z-neEBuWM) 
 ### Prerequisite: [CCDATRCL - Data Structure and Algorithm](https://github.com/flexycode/CCDATRCL)     
 ### Course Repo: [CTINFMGL - INFORMATION MANAGEMENT](https://github.com/flexycode/CTINFMGL) 
@@ -182,7 +182,7 @@ Full Overview of Normalization is in the Folder of documentation
 <img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Cloud%20Architecture.png" />
 
 <!-- 📜 Folder Structure down below -->
-# 📜 Folder Structure  ( WILL UPDATE LATER)!!!
+# 📜 Folder Structure
 ```
 Project Name/
 │
@@ -279,6 +279,7 @@ If you would like to contribute to the Flight Booking App, please follow these s
  * ####  🤖 [Neo Flores](https://github.com/moridin04) - Machine Learning Engineer | Network Engineer | DevOps Engineer
  * ####  🌟 [Yeshua Venezuela](https://github.com/Yesh01) - Cyber Intelligence Specialist | Software Engineer | UI / UX Designer | Digital Forensic Analyst
 
+# 🛸 FAQ
 <!--  Reporting issues -->
 ### 🛸 Reporting Issues
 
