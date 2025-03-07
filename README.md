@@ -408,7 +408,8 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 ### Integration
 - ✨ [Custer Valencerina](https://github.com/Cegeurun) successfully created a codebase for a integration in [Brevo API for Email using node.js](https://github.com/Cegeurun/nodejsbrevo)
 - ✨ [Jay Arre Talosig](https://github.com/flexycode) revise the folder tree structure
-  
+
+### Commit message for pushing or pull-request  
 🧊 Flight Booking Application
 
 <!-- This comment is intended for commiting message in pull-request 
