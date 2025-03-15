@@ -64,26 +64,32 @@ https://dokploy.com/#pricing)
 
 # 💻 How to Run this Application
 
-## 👷 Install Dependencies
+## 1️⃣👷 Install Dependencies
 Run npm install to to install node modules 
 Also you direct already to frontend folder and run npm start
 ```
 npm install
 ```
 
-## 🚀 Run React-app
+## 2️⃣🚀 Run React-app
 Direct to frontend folder after you install the node modules
 ```
 cd frontend
 npm start
 ```
 
-## 🚍 Run Node.js 
+## 3️⃣🚍 Run Node.js 
 Open another terminal in the current codebase to run nodejs for VS Code or other IDE base on what you are using such as Webstorm
 ```
 cd backend
 node index.js
 ```
+
+## 4️⃣ Connect Database 
+```
+Connect MySQL dbs through Database repository folder
+```
+
 
 <!-- Front-End Overview -->
 # 🚀 Screenshot of Project Overview
@@ -182,71 +188,175 @@ Full Overview of Normalization is in the Folder of documentation
 <img src="https://github.com/flexycode/CTINFMGL_FINAL_PROJECT/blob/main/assets/Cloud%20Architecture.png" />
 
 <!-- 📜 Folder Structure down below -->
-# 📜 Folder Structure
+# 📁 Repository Structure
 ```
-Project Name/
+CTINFMGL_FINAL_PROJECT/
 │
-├── client/
-│   ├── public/
-│   │   ├── index.html
-│   │   ├── favicon.ico
-│   │   └── manifest.json
-│   │
-│   └── src/
-│       ├── components/
-│       │   └── (reusable components)
-│       │
-│       ├── pages/
-│       │   ├── Home.js
-│       │   ├── Login.js
-│       │   ├── Register.js
-│       │   ├── FlightSearch.js
-│       │   └── Profile.js
-│       │
-│       ├── services/
-│       │   └── api.js  # Axios configuration goes here
-│       │
-│       ├── utils/
-│       │   └── (utility functions)
-│       │
-│       ├── App.css
-│       ├── App.js
-│       └── index.js
-│
-├── server/
-│   ├── config/
-│   │   └── database.js
-│   │
-│   ├── controllers/
-│   │   ├── authController.js
+├── LICENSE
+├── README.md
+├── assets
+│   ├── Cloud Architecture.png
+│   ├── ERD Airline Reservation.jpg
+│   ├── Entity Relationship Diagram - ALA.png
+│   ├── Entity Relationship Diagram.png
+│   ├── Flight Booking ERD DRAFT V2.png
+│   ├── Flight Booking ERD Scratch .jpg
+│   ├── Flow Chart.png
+│   ├── Front Page.png
+│   ├── Prof Jensen Project Consultation.jpg
+│   ├── Search Flight 2.png
+│   ├── Search Flight.png
+│   ├── Sequence Diagram.png
+│   ├── Table of Content.jpg
+│   └── Video Page.png
+├── backend
+│   ├── auth
+│   │   ├── adminAuth.js
+│   │   └── userAuth.js
+│   ├── config
+│   │   ├── emailConfig.js
+│   │   └── mutlerConfig.js
+│   ├── controller
+│   │   ├── cartController.js
+│   │   ├── chatbotController.js
+│   │   ├── emailController.js
 │   │   ├── flightController.js
+│   │   ├── seatController.js
 │   │   └── userController.js
-│   │
-│   ├── middleware/
-│   │   ├── authMiddleware.js
-│   │   └── errorMiddleware.js
-│   │
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Flight.js
-│   │   └── Booking.js
-│   │
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── flightRoutes.js
-│   │   └── userRoutes.js
-│   │
-│   ├── .env
+│   ├── database
+│   │   └── Mysql.js
+│   ├── index.js
+│   ├── package-lock.json
 │   ├── package.json
-│   └── server.js
-│
-├── database/
-│   └── init-scripts/
-│       ├── users_table.sql
-│       ├── flights_table.sql
-│       └── bookings_table.sql
-│
-└── README.md
+│   ├── routes
+│   │   ├── cart.js
+│   │   ├── chatbot.js
+│   │   ├── email.js
+│   │   ├── flights.js
+│   │   ├── seat.js
+│   │   └── user.js
+│   ├── services
+│   │   ├── cartService.js
+│   │   ├── chatbotService.js
+│   │   ├── emailService.js
+│   │   ├── flightService.js
+│   │   ├── seatService.js
+│   │   └── userService.js
+│   └── views
+│       └── index.ejs
+├── database
+│   ├── carts_table.sql
+│   ├── flight_names.sql
+│   ├── flights_table.sql
+│   ├── seats_table.sql
+│   └── users_table.sql
+├── documentation
+│   ├── Normalization.pdf
+│   └── images
+│       ├── Normalization SS-1.png
+│       ├── Normalization SS-2.png
+│       └── Normalization SS-3.png
+└── frontend
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── _redirects
+    │   ├── favicon.ico
+    │   ├── index.html
+    │   ├── manifest.json
+    │   └── robots.txt
+    └── src
+        ├── App.css
+        ├── App.js
+        ├── App.test.js
+        ├── apicalls
+        │   ├── emailAPICALL.js
+        │   └── seatAPICALL.js
+        ├── components
+        │   ├── Admin-Add
+        │   │   ├── Admin_Add.css
+        │   │   └── Admin_Add.jsx
+        │   ├── Admin_Nav
+        │   │   ├── Admin_Nav.css
+        │   │   └── Admin_Nav.jsx
+        │   ├── Card
+        │   │   ├── Card.css
+        │   │   └── Card.jsx
+        │   ├── ChatBot
+        │   │   ├── Chatbot.css
+        │   │   └── Chatbot.jsx
+        │   ├── Checkout
+        │   │   ├── Checkout.css
+        │   │   └── Checkout.jsx
+        │   ├── FlightMap
+        │   │   ├── Flightmap.css
+        │   │   └── Flightmap.jsx
+        │   ├── Footer
+        │   │   ├── Footer.css
+        │   │   └── Footer.jsx
+        │   ├── ForgotPassword
+        │   │   └── ForgotPassword.jsx
+        │   ├── Nav
+        │   │   ├── Nav.css
+        │   │   └── Nav.jsx
+        │   ├── Search
+        │   │   ├── Search.css
+        │   │   └── Search.jsx
+        │   ├── Timeout
+        │   │   └── Session_Timeout.jsx
+        │   ├── Video
+        │   │   ├── Video.css
+        │   │   └── Video.jsx
+        │   ├── Welcome
+        │   │   ├── Welcome.css
+        │   │   └── Welcome.jsx
+        │   └── myFlights
+        │       ├── MyFlight.css
+        │       └── MyFlights.jsx
+        ├── images
+        │   ├── berlin.png
+        │   ├── eye.svg
+        │   ├── github.svg
+        │   ├── gmail.svg
+        │   ├── hawaiiWelcome.jpg
+        │   ├── linkedin.svg
+        │   ├── live-chat.svg
+        │   ├── my-location.svg
+        │   ├── newyork.png
+        │   ├── paris.png
+        │   ├── password.svg
+        │   ├── philippineTrip - Trim.mp4
+        │   ├── philippineTrip.mp4
+        │   ├── philippinesWelcome.jpg
+        │   └── x-symbol.svg
+        ├── index.css
+        ├── index.js
+        ├── logo.svg
+        ├── pages
+        │   ├── Admin
+        │   │   ├── Admin.css
+        │   │   └── Admin.jsx
+        │   ├── Cart
+        │   │   ├── Cart.css
+        │   │   └── Cart.jsx
+        │   ├── Main
+        │   │   ├── Main.css
+        │   │   └── Main.jsx
+        │   ├── Profile
+        │   │   ├── Profile.css
+        │   │   └── Profile.jsx
+        │   ├── Register
+        │   │   ├── Register.css
+        │   │   └── Register.jsx
+        │   └── SignIn
+        │       ├── SignIn.css
+        │       └── SignIn.jsx
+        ├── password.svg
+        ├── reportWebVitals.js
+        ├── setupTests.js
+        └── utilities
+            ├── ScrollTop.js
+            └── scroll.js
 ```
 
 <!-- 🏆 Contributers down below -->
