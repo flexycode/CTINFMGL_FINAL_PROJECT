@@ -81,7 +81,7 @@ npm start
 ## 3️⃣🚍 Run Node.js 
 Open another terminal in the current codebase to run nodejs for VS Code or other IDE base on what you are using such as Webstorm
 ```
-cd backend
+cd backend 
 node index.js
 ```
 
