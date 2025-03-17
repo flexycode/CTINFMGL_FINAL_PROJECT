@@ -40,7 +40,7 @@ The Flight Booking App is a web application designed to simplify the process of 
 
 🚀 3. **Booking Management:** Users can book flights, view their bookings, and cancel or modify them.
 
-🚀 4. **Payment Integration:** Secure payment gateway integration for processing payments.
+🚀 4. **Payment Integration:** Secure payment gateway integration for processing payments. 
 
 🚀 5. **Admin Panel:** Admins can manage flights, users, and payments.
 
