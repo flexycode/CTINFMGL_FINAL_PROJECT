@@ -521,6 +521,10 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 - ✨ [Custer Valencerina](https://github.com/Cegeurun) successfully created a codebase for a integration in [Brevo API for Email using node.js](https://github.com/Cegeurun/nodejsbrevo)
 - ✨ [Jay Arre Talosig](https://github.com/flexycode) revise the folder tree structure
 
+## 💻 [01.1.2] - 2025-03-07
+### Update
+- ✨ [Jay Arre Talosig](https://github.com/flexycode) updated the entire repository codebase for better scalability and modern database
+
 ### Commit message for pushing or pull-request  
 🧊 Flight Booking Application
 
@@ -545,7 +549,7 @@ Always use this "🧊 Flight Booking" for commiting message for "Pull-request"
 
 <!-- End point line insert Comeback again next time, feel free to modify this  -->
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com/?lines=💎💎Come+Back+Again+next+time💎💎" alt="mystreak"/>
+<img src="https://readme-typing-svg.demolab.com/?lines=Come+Back+Again+next+time" alt="mystreak"/>
 </p>
 
 </p>
