@@ -1,62 +1,98 @@
+"use client";
+
 import HeroVideo from "@/components/HeroVideo";
 import { Plane, Search, User, ShoppingCart } from "lucide-react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Home() {
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
+  const [date, setDate] = useState("");
+  const router = useRouter();
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const params = new URLSearchParams();
+    if (from) params.set("from", from);
+    if (to) params.set("to", to);
+    if (date) params.set("date", date);
+    router.push(`/flights?${params.toString()}`);
+  };
+
   return (
     <main className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 text-white bg-gradient-to-b from-black/50 to-transparent">
-        <div className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Plane className="w-8 h-8 rotate-45 text-blue-400" />
           <span className="text-2xl font-bold tracking-tighter">ALA</span>
-        </div>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8 font-medium">
-          <a href="#" className="hover:text-blue-400 transition-colors">Flights</a>
+          <Link href="/flights" className="hover:text-blue-400 transition-colors">Flights</Link>
           <a href="#" className="hover:text-blue-400 transition-colors">About</a>
           <a href="#" className="hover:text-blue-400 transition-colors">Support</a>
         </div>
 
         <div className="flex items-center gap-6">
-          <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
-            <Search className="w-5 h-5" />
+          <button className="p-2 hover:bg-white/10 rounded-full transition-colors font-bold uppercase text-[10px] tracking-widest hidden sm:block">
+            Support
           </button>
-          <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
+          <Link href="/cart" className="p-2 hover:bg-white/10 rounded-full transition-colors">
             <ShoppingCart className="w-5 h-5" />
-          </button>
-          <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-semibold transition-all">
+          </Link>
+          <Link href="/signin" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/30">
             <User className="w-4 h-4" />
             <span>Sign In</span>
-          </button>
+          </Link>
         </div>
       </nav>
 
       <HeroVideo />
 
       {/* Quick Search Section */}
-      <section className="relative z-30 -mt-16 max-w-5xl mx-auto px-4">
-        <div className="bg-white rounded-2xl shadow-2xl p-8 border border-slate-100">
+      <section className="relative z-30 -mt-20 max-w-5xl mx-auto px-4">
+        <form onSubmit={handleSearch} className="bg-white rounded-3xl shadow-2xl p-4 sm:p-8 border border-slate-100">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-slate-500 uppercase">From</label>
-              <input type="text" placeholder="Origin City" className="w-full p-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none" />
+              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Origin</label>
+              <input
+                type="text"
+                placeholder="From where?"
+                className="w-full p-4 rounded-2xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all font-medium"
+                value={from}
+                onChange={(e) => setFrom(e.target.value)}
+              />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-slate-500 uppercase">To</label>
-              <input type="text" placeholder="Destination City" className="w-full p-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none" />
+              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Destination</label>
+              <input
+                type="text"
+                placeholder="Where to?"
+                className="w-full p-4 rounded-2xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all font-medium"
+                value={to}
+                onChange={(e) => setTo(e.target.value)}
+              />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-slate-500 uppercase">Date</label>
-              <input type="date" className="w-full p-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-500 outline-none" />
+              <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Departure</label>
+              <input
+                type="date"
+                className="w-full p-4 rounded-2xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all font-medium"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+              />
             </div>
             <div className="flex items-end">
-              <button className="w-full bg-slate-900 text-white p-4 rounded-xl font-bold hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
-                <Search className="w-5 h-5" />
-                Find Flights
+              <button type="submit" className="w-full bg-blue-600 text-white p-4 h-[58px] rounded-2xl font-black hover:bg-blue-700 hover:scale-[1.02] active:scale-[0.98] transition-all shadow-lg shadow-blue-500/30 flex items-center justify-center gap-2 uppercase tracking-widest text-sm">
+                <Search className="w-5 h-5 stroke-[3px]" />
+                Search
               </button>
             </div>
           </div>
-        </div>
+        </form>
       </section>
 
       {/* Featured Destinations (Placeholder for now) */}
