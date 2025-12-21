@@ -1,16 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getCartItems, removeFromCart } from "@/lib/services";
+import { getCartItems, removeFromCart, createBooking, clearCart } from "@/lib/services";
 import { supabase } from "@/lib/supabase";
 import { motion, AnimatePresence } from "framer-motion";
-import { ShoppingCart, Trash2, Plane, ArrowRight, ChevronLeft, CreditCard } from "lucide-react";
+import { ShoppingCart, Trash2, Plane, ArrowRight, ChevronLeft, CreditCard, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function CartPage() {
     const [items, setItems] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    const [checkoutLoading, setCheckoutLoading] = useState(false);
     const [user, setUser] = useState<any>(null);
     const router = useRouter();
 
@@ -36,9 +37,36 @@ export default function CartPage() {
         }
     };
 
-    const totalPrice = items.reduce((sum, item) => sum + Number(item.flight.base_price), 0);
+    const handleCheckout = async () => {
+        if (!user || items.length === 0) return;
 
-    if (loading) return <div className="min-h-screen flex items-center justify-center">Loading cart...</div>;
+        setCheckoutLoading(true);
+        try {
+            // Create a booking for each item in the cart
+            for (const item of items) {
+                await createBooking(user.id, item.flight_id, item.seat_id);
+            }
+
+            // Clear the cart
+            await clearCart(user.id);
+
+            // Redirect to success
+            router.push("/success");
+        } catch (error) {
+            console.error("Checkout failed:", error);
+            alert("Checkout failed. Please try again.");
+        } finally {
+            setCheckoutLoading(false);
+        }
+    };
+
+    const totalPrice = items.reduce((sum, item) => sum + (Number(item.flight.base_price) + (item.seat ? Number(item.seat.price) : 0)), 0);
+
+    if (loading) return (
+        <div className="min-h-screen flex items-center justify-center bg-slate-50">
+            <Loader2 className="w-8 h-8 text-blue-600 animate-spin" />
+        </div>
+    );
 
     return (
         <div className="min-h-screen bg-slate-50">
@@ -88,12 +116,17 @@ export default function CartPage() {
                                                 <Plane className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors rotate-45" />
                                             </div>
                                             <div>
+                                                <div className="flex items-center gap-2 mb-0.5">
+                                                    <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest">{item.seat?.class || 'Economy'}</span>
+                                                    <span className="w-1 h-1 bg-slate-200 rounded-full" />
+                                                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Seat {item.seat?.seat_number || '--'}</span>
+                                                </div>
                                                 <h3 className="font-black text-slate-900">{item.flight.departure_city} → {item.flight.arrival_city}</h3>
-                                                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">{new Date(item.flight.flight_date).toLocaleDateString()}</p>
+                                                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{new Date(item.flight.flight_date).toLocaleDateString(undefined, { dateStyle: 'long' })}</p>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-6">
-                                            <p className="font-black text-blue-600 text-lg">₱{Number(item.flight.base_price).toLocaleString()}</p>
+                                            <p className="font-black text-blue-600 text-lg">₱{(Number(item.flight.base_price) + (item.seat ? Number(item.seat.price) : 0)).toLocaleString()}</p>
                                             <button
                                                 onClick={() => handleRemove(item.id)}
                                                 className="p-2 text-slate-300 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all"
@@ -115,7 +148,7 @@ export default function CartPage() {
                                         <span className="font-bold">₱{totalPrice.toLocaleString()}</span>
                                     </div>
                                     <div className="flex justify-between text-sm">
-                                        <span className="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Taxes & Fees</span>
+                                        <span className="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Taxes & Fees (12%)</span>
                                         <span className="font-bold">₱{(totalPrice * 0.12).toLocaleString()}</span>
                                     </div>
                                     <div className="pt-4 border-t border-white/10 flex justify-between items-end">
@@ -123,13 +156,20 @@ export default function CartPage() {
                                         <span className="text-2xl font-black">₱{(totalPrice * 1.12).toLocaleString()}</span>
                                     </div>
                                 </div>
-                                <Link
-                                    href="/success"
-                                    className="w-full bg-blue-600 text-white py-4 rounded-xl font-black shadow-lg shadow-blue-500/20 hover:bg-blue-700 transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2"
+                                <button
+                                    onClick={handleCheckout}
+                                    disabled={checkoutLoading}
+                                    className="w-full bg-blue-600 disabled:bg-slate-700 text-white py-4 rounded-xl font-black shadow-lg shadow-blue-500/20 hover:bg-blue-700 transition-all uppercase text-xs tracking-widest flex items-center justify-center gap-2"
                                 >
-                                    <CreditCard className="w-4 h-4" />
-                                    Checkout Now
-                                </Link>
+                                    {checkoutLoading ? (
+                                        <Loader2 className="w-4 h-4 animate-spin" />
+                                    ) : (
+                                        <>
+                                            <CreditCard className="w-4 h-4" />
+                                            Checkout Now
+                                        </>
+                                    )}
+                                </button>
                             </div>
                         </aside>
                     </div>

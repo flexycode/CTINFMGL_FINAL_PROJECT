@@ -63,10 +63,10 @@ export const getSeats = async (flightId: string): Promise<any[]> => {
     return data || [];
 };
 
-export const addToCart = async (flightId: number, userId: string): Promise<boolean> => {
+export const addToCart = async (flightId: number, userId: string, seatId: number): Promise<boolean> => {
     const { error } = await supabase
         .from('carts')
-        .insert([{ flight_id: flightId, user_id: userId }]);
+        .insert([{ flight_id: flightId, user_id: userId, seat_id: seatId }]);
 
     if (error) {
         console.error('Error adding to cart:', error);
@@ -80,7 +80,8 @@ export const getCartItems = async (userId: string): Promise<any[]> => {
         .from('carts')
         .select(`
             *,
-            flight:flights(*)
+            flight:flights(*),
+            seat:seats(*)
         `)
         .eq('user_id', userId);
 
@@ -91,15 +92,39 @@ export const getCartItems = async (userId: string): Promise<any[]> => {
     return data || [];
 };
 
-export const removeFromCart = async (cartId: number): Promise<boolean> => {
+export async function removeFromCart(cartId: number) {
     const { error } = await supabase
-        .from('carts')
+        .from("carts")
         .delete()
-        .eq('id', cartId);
+        .eq("id", cartId);
+    return !error;
+}
 
-    if (error) {
-        console.error('Error removing from cart:', error);
-        return false;
-    }
-    return true;
-};
+export async function clearCart(userId: string) {
+    const { error } = await supabase
+        .from("carts")
+        .delete()
+        .eq("user_id", userId);
+    return !error;
+}
+
+export async function createBooking(userId: string, flightId: number, seatId: number) {
+    const { data, error } = await supabase
+        .from("bookings")
+        .insert([{ user_id: userId, flight_id: flightId, seat_id: seatId }])
+        .select();
+    return { data, error };
+}
+
+export async function getBookings(userId: string) {
+    const { data, error } = await supabase
+        .from("bookings")
+        .select(`
+      *,
+      flight:flights(*),
+      seat:seats(*)
+    `)
+        .eq("user_id", userId)
+        .order("created_at", { ascending: false });
+    return data || [];
+}

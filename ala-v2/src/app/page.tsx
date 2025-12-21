@@ -1,7 +1,7 @@
 "use client";
 
 import HeroVideo from "@/components/HeroVideo";
-import { Plane, Search, User, ShoppingCart } from "lucide-react";
+import { Search, MapPin, Calendar, Users, ShoppingCart, User, Plane, LayoutDashboard } from "lucide-react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -42,6 +42,10 @@ export default function Home() {
           </button>
           <Link href="/cart" className="p-2 hover:bg-white/10 rounded-full transition-colors">
             <ShoppingCart className="w-5 h-5" />
+          </Link>
+          <Link href="/dashboard" className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 px-4 py-2 rounded-lg font-semibold transition-all border border-white/10">
+            <LayoutDashboard className="w-4 h-4" />
+            <span>Dashboard</span>
           </Link>
           <Link href="/signin" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/30">
             <User className="w-4 h-4" />

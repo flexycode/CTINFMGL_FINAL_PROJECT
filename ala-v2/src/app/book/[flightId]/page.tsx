@@ -50,7 +50,7 @@ export default function BookPage({ params }: { params: Promise<{ flightId: strin
         if (!user || !flight || !selectedSeat) return;
 
         setCartLoading(true);
-        const success = await addToCart(Number(flightId), user.id);
+        const success = await addToCart(Number(flightId), user.id, selectedSeat.id);
         if (success) {
             router.push("/cart");
         } else {
