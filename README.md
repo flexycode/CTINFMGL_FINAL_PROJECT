@@ -12,19 +12,47 @@
 <!-- Table of contents down below -->
 # 📊 Table of Contents
 
-- [Introduction](#-introduction) 
-- [Key Features](#-key-features)           
-- [Folder Structure](#-folder-structure) 
-- [Contributing](#-contributing)           
-- [License](#-license)   
-- [Acknowledgements](#-acknowledgements) 
-- [FAQ](#-faq)       
-- [Changelog](#-changelogs)   
+- [Introduction](#-introduction)
+- [Modernization Revamp (Phase 2) 🚀](#-modernization-revamp-phase-2)
+- [Key Features](#-key-features)
+- [Folder Structure](#-folder-structure)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
+- [FAQ](#-faq)
+- [Changelog](#-changelogs)
 
 <!-- Introduction down below -->
 # 🧠 [Introduction](#introduction)
 
-A flight booking web application designed to simplify the process of booking flights with the used of modern JavaScript techstacks
+A flight booking web application designed to simplify the process of booking flights with the use of modern JavaScript techstacks.
+
+---
+
+# 🚀 [Modernization Revamp (Phase 2)](#modernization-revamp-phase-2)
+
+As of December 2025, the project has been fully modernized to a higher-performance, cloud-native architecture. 
+
+### 🌟 New Revamp Highlights
+*   **Next.js 16 (App Router)**: Blazing fast performance and SEO optimizations.
+*   **Supabase (BaaS)**: Real-time database, Authentication, and Row-Level Security.
+*   **AI Travel Assistant**: Integrated OpenAI-powered chatbot for 24/7 support.
+*   **Modern UX**: Glassmorphism UI, Framer Motion animations, and mobile-responsive design.
+
+### 🌟 Revamp Gallery
+````carousel
+![Homepage](assets/Revamp_Home.png)
+<!-- slide -->
+![Flight Selection](assets/Revamp_Flights.png)
+<!-- slide -->
+![Seat Grid](assets/Revamp_Seats.png)
+<!-- slide -->
+![AI Assistant](assets/Revamp_Chatbot.png)
+<!-- slide -->
+![Booking Success](assets/Revamp_Success.png)
+````
+
+---
 
 ## 🏦 Case Study: Flight Booking App
 
@@ -46,16 +74,19 @@ The Flight Booking App is a web application designed to simplify the process of 
 
 <!-- Techstacks down below (temporary need some proper decision for the group team in order to inlign for the project -->
 ## 💻 Techstacks
-#### MERN STACK 
-* **Frontend:** [React.js](https://react.dev/) (JavaScript framework)
-* **Backend:** [Node.js](https://nodejs.org/en) with [Express.js](https://expressjs.com/) (Node.js framework)
-* **Database:** [MySQL](https://www.mysql.com/) for flexible use of SQL
-* **Authentication:** JWT (JSON Web Tokens)
-* **Payment Gateway:** Stripe or PayPal ( Not required!) we use local host authmanagement
-* **Email:** Brevo API 
-* **State Management:** Redux or Context API
-* **Styling:** CSS-in-JS (Styled-components) or Tailwind CSS
-* **Deployment:** [Vercel](https://vercel.com/) (for Next.js) or [Heroku](https://www.heroku.com/) or [Dokploy](https://dokploy.com/#pricing)
+
+### Phase 2: Modern Techstack (Current)
+*   **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+*   **Backend & DB:** [Supabase](https://supabase.com/) (PostgreSQL + Auth)
+*   **Styling:** [Tailwind CSS 4](https://tailwindcss.com/) + [Framer Motion](https://www.framer.com/motion/)
+*   **AI Engine:** [OpenAI GPT-3.5/4](https://openai.com/)
+*   **Icons:** [Lucide React](https://lucide.dev/)
+
+### Phase 1: Legacy Stack (Historical)
+*   **Frontend:** [React.js](https://react.dev/) (CRA)
+*   **Backend:** [Node.js](https://nodejs.org/en) with [Express.js](https://expressjs.com/)
+*   **Database:** [MySQL](https://www.mysql.com/)
+*   **Authentication:** JWT (JSON Web Tokens)
 
 ## 🕵️ Resources
 ```
@@ -64,30 +95,47 @@ https://dokploy.com/#pricing)
 
 # 💻 How to Run this Application
 
-## 1️⃣👷 Install Dependencies
-Run npm install to to install node modules 
-Also you direct already to frontend folder and run npm start
-```
+## 🟢 Phase 2: Next.js (Current)
+
+### 1️⃣👷 Install Dependencies
+```bash
+cd ala-v2
 npm install
 ```
 
-## 2️⃣🚀 Run React-app
-Direct to frontend folder after you install the node modules
-```
-cd frontend
-npm start
-```
-
-## 3️⃣🚍 Run Node.js 
-Open another terminal in the current codebase to run nodejs for VS Code or other IDE base on what you are using such as Webstorm
-```
-cd backend 
-node index.js
+### 2️⃣🚀 Setup Environment
+Create a `.env.local` file in the `ala-v2` directory:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-## 4️⃣ Connect Database 
+### 3️⃣🔥 Start Development
+```bash
+npm run dev
 ```
-Connect MySQL dbs through Database repository folder
+
+---
+
+## 🔴 Phase 1: Legacy (MERN)
+> [!NOTE]
+> The legacy backend and frontend have been archived as of December 2025.
+
+### 1️⃣👷 Install Dependencies
+Run npm install to to install node modules 
+```bash
+cd frontend && npm install
+cd ../backend && npm install
+```
+
+### 2️⃣🚀 Run Application
+```bash
+# Terminal 1
+cd frontend && npm start
+
+# Terminal 2
+cd backend && node index.js
 ```
 
 
@@ -191,172 +239,14 @@ Full Overview of Normalization is in the Folder of documentation
 # 📁 Repository Structure
 ```
 CTINFMGL_FINAL_PROJECT/
-│
+├── ala-v2/              # (Phase 2) Next.js Modern App
+│   ├── src/             # Application Logic
+│   ├── supabase/        # SQL Migration Scripts
+│   └── .env.local       # Local Credentials (gitignored)
+├── assets/              # Project Media & Revamp Screens
+├── documentation/       # Legacy Normalization & ERDs
 ├── LICENSE
-├── README.md
-├── assets
-│   ├── Cloud Architecture.png
-│   ├── ERD Airline Reservation.jpg
-│   ├── Entity Relationship Diagram - ALA.png
-│   ├── Entity Relationship Diagram.png
-│   ├── Flight Booking ERD DRAFT V2.png
-│   ├── Flight Booking ERD Scratch .jpg
-│   ├── Flow Chart.png
-│   ├── Front Page.png
-│   ├── Prof Jensen Project Consultation.jpg
-│   ├── Search Flight 2.png
-│   ├── Search Flight.png
-│   ├── Sequence Diagram.png
-│   ├── Table of Content.jpg
-│   └── Video Page.png
-├── backend
-│   ├── auth
-│   │   ├── adminAuth.js
-│   │   └── userAuth.js
-│   ├── config
-│   │   ├── emailConfig.js
-│   │   └── mutlerConfig.js
-│   ├── controller
-│   │   ├── cartController.js
-│   │   ├── chatbotController.js
-│   │   ├── emailController.js
-│   │   ├── flightController.js
-│   │   ├── seatController.js
-│   │   └── userController.js
-│   ├── database
-│   │   └── Mysql.js
-│   ├── index.js
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── routes
-│   │   ├── cart.js
-│   │   ├── chatbot.js
-│   │   ├── email.js
-│   │   ├── flights.js
-│   │   ├── seat.js
-│   │   └── user.js
-│   ├── services
-│   │   ├── cartService.js
-│   │   ├── chatbotService.js
-│   │   ├── emailService.js
-│   │   ├── flightService.js
-│   │   ├── seatService.js
-│   │   └── userService.js
-│   └── views
-│       └── index.ejs
-├── database
-│   ├── carts_table.sql
-│   ├── flight_names.sql
-│   ├── flights_table.sql
-│   ├── seats_table.sql
-│   └── users_table.sql
-├── documentation
-│   ├── Normalization.pdf
-│   └── images
-│       ├── Normalization SS-1.png
-│       ├── Normalization SS-2.png
-│       └── Normalization SS-3.png
-└── frontend
-    ├── package-lock.json
-    ├── package.json
-    ├── public
-    │   ├── _redirects
-    │   ├── favicon.ico
-    │   ├── index.html
-    │   ├── manifest.json
-    │   └── robots.txt
-    └── src
-        ├── App.css
-        ├── App.js
-        ├── App.test.js
-        ├── apicalls
-        │   ├── emailAPICALL.js
-        │   └── seatAPICALL.js
-        ├── components
-        │   ├── Admin-Add
-        │   │   ├── Admin_Add.css
-        │   │   └── Admin_Add.jsx
-        │   ├── Admin_Nav
-        │   │   ├── Admin_Nav.css
-        │   │   └── Admin_Nav.jsx
-        │   ├── Card
-        │   │   ├── Card.css
-        │   │   └── Card.jsx
-        │   ├── ChatBot
-        │   │   ├── Chatbot.css
-        │   │   └── Chatbot.jsx
-        │   ├── Checkout
-        │   │   ├── Checkout.css
-        │   │   └── Checkout.jsx
-        │   ├── FlightMap
-        │   │   ├── Flightmap.css
-        │   │   └── Flightmap.jsx
-        │   ├── Footer
-        │   │   ├── Footer.css
-        │   │   └── Footer.jsx
-        │   ├── ForgotPassword
-        │   │   └── ForgotPassword.jsx
-        │   ├── Nav
-        │   │   ├── Nav.css
-        │   │   └── Nav.jsx
-        │   ├── Search
-        │   │   ├── Search.css
-        │   │   └── Search.jsx
-        │   ├── Timeout
-        │   │   └── Session_Timeout.jsx
-        │   ├── Video
-        │   │   ├── Video.css
-        │   │   └── Video.jsx
-        │   ├── Welcome
-        │   │   ├── Welcome.css
-        │   │   └── Welcome.jsx
-        │   └── myFlights
-        │       ├── MyFlight.css
-        │       └── MyFlights.jsx
-        ├── images
-        │   ├── berlin.png
-        │   ├── eye.svg
-        │   ├── github.svg
-        │   ├── gmail.svg
-        │   ├── hawaiiWelcome.jpg
-        │   ├── linkedin.svg
-        │   ├── live-chat.svg
-        │   ├── my-location.svg
-        │   ├── newyork.png
-        │   ├── paris.png
-        │   ├── password.svg
-        │   ├── philippineTrip - Trim.mp4
-        │   ├── philippineTrip.mp4
-        │   ├── philippinesWelcome.jpg
-        │   └── x-symbol.svg
-        ├── index.css
-        ├── index.js
-        ├── logo.svg
-        ├── pages
-        │   ├── Admin
-        │   │   ├── Admin.css
-        │   │   └── Admin.jsx
-        │   ├── Cart
-        │   │   ├── Cart.css
-        │   │   └── Cart.jsx
-        │   ├── Main
-        │   │   ├── Main.css
-        │   │   └── Main.jsx
-        │   ├── Profile
-        │   │   ├── Profile.css
-        │   │   └── Profile.jsx
-        │   ├── Register
-        │   │   ├── Register.css
-        │   │   └── Register.jsx
-        │   └── SignIn
-        │       ├── SignIn.css
-        │       └── SignIn.jsx
-        ├── password.svg
-        ├── reportWebVitals.js
-        ├── setupTests.js
-        └── utilities
-            ├── ScrollTop.js
-            └── scroll.js
+└── README.md
 ```
 
 <!-- 🏆 Contributers down below -->
@@ -520,6 +410,21 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 ### Integration
 - ✨ [Custer Valencerina](https://github.com/Cegeurun) successfully created a codebase for a integration in [Brevo API for Email using node.js](https://github.com/Cegeurun/nodejsbrevo)
 - ✨ [Jay Arre Talosig](https://github.com/flexycode) revise the folder tree structure
+
+## 💻 [02.0.0] - 2025-12-22
+### High Performance Revamp (Phase 2)
+- ♻️ **Migration**: Successfully moved the entire project to **Next.js 16** and **Supabase**.
+- ✨ **UI/UX**: Implemented modern glassmorphism design with **Tailwind 4** and **Framer Motion**.
+- 🤖 **AI Support**: Added OpenAI-powered Chatbot for automated travel assistance.
+- 💺 **Booking Flow**: Built interactive Seat Selection, Shopping Cart, and User Dashboard.
+- 🧹 **Cleanup**: Removed legacy folders to optimize repository size.
+
+Co-Authored-By: Yearu <133670683+Yesh01@users.noreply.github.com>
+Co-Authored-By: _whykel <149129114+Kyelkyel@users.noreply.github.com>
+Co-Authored-By: Jay <flexyledger@gmail.com>
+Co-Authored-By: Neo <112244770+moridin04@users.noreply.github.com>
+Co-Authored-By: Angelo Castillo <107163626+gabcsx@users.noreply.github.com>
+Co-Authored-By: Custer Jeremiah P. Valencerina <cegeurunws@gmail.com>
 
 ## 💻 [01.1.2] - 2025-03-07
 ### Update
