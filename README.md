@@ -419,12 +419,12 @@ Chronological list of updates, bug fixes, new features, and other modifications 
 - 💺 **Booking Flow**: Built interactive Seat Selection, Shopping Cart, and User Dashboard.
 - 🧹 **Cleanup**: Removed legacy folders to optimize repository size.
 
-Co-Authored-By: Yearu <133670683+Yesh01@users.noreply.github.com>
-Co-Authored-By: _whykel <149129114+Kyelkyel@users.noreply.github.com>
-Co-Authored-By: Jay <flexyledger@gmail.com>
-Co-Authored-By: Neo <112244770+moridin04@users.noreply.github.com>
-Co-Authored-By: Angelo Castillo <107163626+gabcsx@users.noreply.github.com>
-Co-Authored-By: Custer Jeremiah P. Valencerina <cegeurunws@gmail.com>
+- Co-Authored-By: Yeshua Venezuela <133670683+Yesh01@users.noreply.github.com>
+- Co-Authored-By: Myckle Vince Natividad <149129114+Kyelkyel@users.noreply.github.com>
+- Co-Authored-By: Jay Arre Talosig <flexyledger@gmail.com>
+- Co-Authored-By: Neo Flores <112244770+moridin04@users.noreply.github.com>
+- Co-Authored-By: Angelo Castillo <107163626+gabcsx@users.noreply.github.com>
+- Co-Authored-By: Custer Jeremiah P. Valencerina <cegeurunws@gmail.com>
 
 ## 💻 [01.1.2] - 2025-03-07
 ### Update
